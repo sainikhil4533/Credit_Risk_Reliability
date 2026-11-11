@@ -1,0 +1,13 @@
+dataset,model,calibration,brier_score
+credit_card,logistic_regression,uncalibrated,0.14553894677798912
+credit_card,logistic_regression,sigmoid,0.1459659748223832
+credit_card,logistic_regression,isotonic,0.14296658882303628
+credit_card,xgboost,uncalibrated,0.1362451363875364
+credit_card,xgboost,sigmoid,0.13698102714751706
+credit_card,xgboost,isotonic,0.13674018341354452
+south_german,logistic_regression,uncalibrated,0.18976995470463529
+south_german,logistic_regression,sigmoid,0.1826690459062455
+south_german,logistic_regression,isotonic,0.20178315565732943
+south_german,xgboost,uncalibrated,0.1749030832095479
+south_german,xgboost,sigmoid,0.17381104687112262
+south_german,xgboost,isotonic,0.17609322224569296

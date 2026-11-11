@@ -1,0 +1,48 @@
+# Global experiment configuration.
+# IMPORTANT: Values here are prespecified. Do NOT change based on test-set results.
+
+project_name: credit_risk_reliability_v2
+random_seed: 42
+
+paths:
+  datasets_raw: datasets/raw
+  datasets_processed: datasets/processed
+  results_csv: results/csv
+  results_json: results/json
+  figures: figures
+  reports: reports
+
+datasets:
+  default_of_credit_card_clients:
+    uci_id: 350
+    url: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
+  south_german_credit:
+    uci_id: 573
+    url: https://archive.ics.uci.edu/dataset/573/south+german+credit
+
+review_budgets: [0.05, 0.10, 0.20]
+
+calibration_settings:
+  - uncalibrated
+  - sigmoid
+  - isotonic
+
+predictive_models:
+  - logistic_regression
+  - xgboost
+
+review_policies:
+  - random
+  - probability_uncertainty
+  - model_disagreement
+  - scross
+  - aucross
+
+policy_selection:
+  s1: {type: single_validation_winner}
+  s2:
+    type: repeated_validation
+    n_repeats: 5          
+  s3:
+    type: lower_confidence_bound
+    lambda: 1.0           

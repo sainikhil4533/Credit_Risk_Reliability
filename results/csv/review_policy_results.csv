@@ -1,0 +1,21 @@
+dataset,policy,recall,precision
+credit_card,Random,0.0942684766214178,0.2086811352253756
+credit_card,Probability Uncertainty,0.2601809954751131,0.5759599332220368
+credit_card,Model Disagreement,0.2217194570135746,0.4908180300500834
+credit_card,Random,0.0942684766214178,0.2086811352253756
+credit_card,Probability Uncertainty,0.222473604826546,0.4924874791318864
+credit_card,Model Disagreement,0.2217194570135746,0.4908180300500834
+south_german,Random,0.1,0.3
+south_german,Probability Uncertainty,0.1,0.3
+south_german,Model Disagreement,0.1,0.3
+south_german,Random,0.1,0.3
+south_german,Probability Uncertainty,0.1166666666666666,0.35
+south_german,Model Disagreement,0.1,0.3
+credit_card,SCROSS (Expected Risk),0.30844645550527905,0.6828046744574291
+credit_card,AUCROSS (Rank Ensemble),0.3137254901960784,0.6944908180300501
+credit_card,SCROSS (Expected Risk),0.31598793363499245,0.6994991652754591
+credit_card,AUCROSS (Rank Ensemble),0.3137254901960784,0.6944908180300501
+south_german,SCROSS (Expected Risk),0.23333333333333334,0.7
+south_german,AUCROSS (Rank Ensemble),0.25,0.75
+south_german,SCROSS (Expected Risk),0.3,0.9
+south_german,AUCROSS (Rank Ensemble),0.25,0.75

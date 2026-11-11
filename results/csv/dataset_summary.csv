@@ -1,0 +1,3 @@
+dataset,rows,cols,missing,duplicates
+Default of Credit Card Clients,30000,24,0,35
+South German Credit,1000,21,0,0
